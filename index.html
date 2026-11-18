@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>health sync</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>health sync</h1>
+<p class="sub">Google Health → intervals.icu 同期ツール（個人用）</p>
+
+<p>health sync は、Google Health（旧 Fitbit）に記録された自分の <strong>体重</strong>・<strong>心拍変動（HRV）</strong>・<strong>安静時心拍数</strong> を読み取り、自分の <a href="https://intervals.icu/">intervals.icu</a> アカウントの Wellness に書き込む個人用のツールです。</p>
+
+<h2>しくみ</h2>
+<p>開発者本人の GitHub Actions 上で 1 日 2 回実行されます。Google Health API からは読み取り専用のスコープ（<code>googlehealth.health_metrics_and_measurements.readonly</code>）でデータを取得し、intervals.icu の API に書き込みます。一般向けのサービスではなく、利用者は開発者本人だけです。</p>
+
+<h2>お問い合わせ</h2>
+<p><a href="https://github.com/shnsuke/health-sync-site/issues">GitHub Issues</a> からお願いします。</p>
+
+<footer>
+<a href="privacy.html">プライバシーポリシー</a>
+</footer>
+</main>
+</body>
+</html>
